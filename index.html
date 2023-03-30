@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+
+  fetch('http://192.168.1.188/api/r1oSIPYeAYC1hdNvAHrbAMvr93afutcXuvGNyHJe/sensors/39')
+  .then(response => response.json())
+  .then(data => console.log(data));
+}
+</script>
+</head>
+<body>
+<h2>Meridian Workout Room</h2>
+
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
